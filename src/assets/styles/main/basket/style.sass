@@ -1,0 +1,462 @@
+$text-colour: #61666A
+$text-colour-disabled: #ADB5BD
+$lcw-colour: #1B47BA
+$lcw-price: #0047BA
+$lcw-clothes-colour-1: #28A9FF
+$lcw-clothes-colour-2: #DFC073
+$price-sum-bg: #F8F8F8
+$font-normal: normal normal normal 1.2rem Rubik
+$font-bold: normal normal bold 1.2rem Rubik
+
+.basket-row
+    display: flex
+    margin: 0 0 2rem 0
+    @media(max-width: 768px)
+        flex-direction: column
+    
+.basket-left-row
+    display: flex
+    flex-direction: column
+    flex: 1 1 70%
+    padding: 2rem 3rem
+    @media(max-width: 1024px)
+        padding: 2rem 2rem
+    @media(max-width: 600px)
+        padding: 1rem 1rem
+    
+
+.shipping-info 
+    background-color: $lcw-price 
+    color: white
+    text-align: center
+    padding: 1rem
+    margin: 0 0 1rem 0
+    font: $font-bold
+    @media(max-width: 425px)
+        font: normal normal bold 1rem Rubik
+
+.basket-left-heading 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 0 1rem 0
+
+.basket-text
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $text-colour
+    font: normal normal bold 1.5rem Rubik
+    @media(max-width: 425px)
+        font: normal normal bold 1.2rem Rubik
+    @media(max-width: 375px)
+        font: normal normal bold 0.8rem Rubik 
+    span
+        margin: 0 0.5rem 0 0
+    p
+        margin: 0
+
+.btn-backspace
+    display: flex
+    border: none
+    background-color: white
+    align-items: center
+    color: $lcw-colour
+    font: normal normal bold 1.1rem Rubik
+    text-decoration: none
+    @media(max-width: 425px)
+        font: normal normal bold 0.9rem Rubik
+    @media(max-width: 375px)
+        font: normal normal bold 0.7rem Rubik
+
+.btn-backspace:hover
+    color: $lcw-colour - 50
+
+.basket-left-item
+    display: block
+    padding: 1rem 0 1rem 0
+    border-bottom: 1px solid #BEC2C6
+
+.product-area
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.product-left-row
+    display: flex
+
+.product-image
+    display: flex
+    margin: 0 3rem 0 0
+    img
+        width: 180px
+        height: 240px
+    @media(max-width: 425px)
+        margin: 0 1rem 0 0
+        img
+            width: 150px
+            height: 220px
+    @media(max-width: 425px)
+        margin: 0 1rem 0 0
+        img
+            width: 120px
+            height: 200px
+        
+.product-info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.product-info-first-row
+    display: flex
+    flex-direction: column
+    padding: 0.2rem 0 0 0
+    p
+        color: $text-colour 
+        font: normal normal normal 1.2rem Rubik
+        margin: 0
+        @media(max-width: 425px)
+            font: normal normal normal 0.7rem Rubik
+    span
+        color: $text-colour-disabled
+        font: normal normal normal 1rem Rubik
+        margin: 1rem 0 0 0
+        @media(max-width: 425px)
+            font: normal normal normal 0.5rem Rubik
+
+.product-info-second-row
+    display: flex
+    flex-direction: column
+    padding: 0 0 0.2rem 0
+    p
+        margin: 0
+        color: $text-colour
+        font: normal normal normal 1.2rem Rubik
+        @media(max-width: 425px)
+            font: normal normal normal 0.7rem Rubik
+        @media(max-width: 375px)
+            font: normal normal normal 0.5rem Rubik
+        span
+            font: normal normal bold 1.2rem Rubik
+            @media(max-width: 425px)
+                font: normal normal bold 0.7rem Rubik
+            @media(max-width: 425px)
+                font: normal normal bold 0.5rem Rubik
+    p:last-child
+        margin: 1rem 0 0 0
+        @media(max-width: 425px)
+            margin: 0.5rem 0 0 0
+
+.product-right-row
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: space-between
+
+.product-price
+    display: flex
+    flex-direction: column
+    span
+        font: normal normal normal 0.8rem Rubik
+        text-decoration: line-through
+        text-align: end
+        color: $text-colour
+        @media(max-width: 425px)
+            font-size: 0.6rem
+    p
+        font: normal normal bold 1.2rem Rubik
+        text-align: end
+        margin: 0.5rem 0 0 0
+        color: $lcw-price
+        @media(max-width: 425px)
+            font-size: 1rem
+
+.product-fav-remove
+    display: flex
+    flex-direction: row
+    img
+        width: 32px
+        height: 32px
+        margin: 0.5rem
+        padding: 0.25rem
+        background-color: white
+        border-radius: 8px
+        box-shadow: 0px 3px 6px #00000029
+        @media(max-width: 425px)
+            width: 30px
+            height: 30px
+            margin: 0.25rem
+        @media(max-width: 375px)
+            width: 24px
+            height: 24px
+            margin: 0.1rem
+    img:hover
+        cursor: pointer
+
+.product-add
+    display: flex
+    flex-direction: column-reverse
+
+.product-quantity
+    display: flex
+    justify-content: flex-end
+    button
+        display: flex
+        justify-content: center
+        color: $text-colour
+        font: normal normal bold 1.2rem Rubik
+        border: none
+        box-shadow: 0px 3px 6px #00000029
+    button:first-child
+        flex: 0 1 13% !important
+        border: none
+        @media(max-width: 1024px)
+            flex: 0 1 17% !important
+        @media(max-width: 425px)
+            flex: 0 1 10% !important
+        @media(max-width: 375px)
+            flex: 0 0 0% !important
+            width: 10px
+    button:last-child
+        flex: 0 1 10% !important
+        @media(max-width: 1024px)
+            flex: 0 1 17% !important
+        @media(max-width: 425px)
+            flex: 0 1 10% !important
+        @media(max-width: 375px)
+            flex: 0 0 0% !important
+            width: 10px
+    input
+        flex: 0 1 20% !important
+        text-align: center
+        color: $lcw-price
+        font: normal normal normal 1.2rem Rubik
+        border: none
+        box-shadow: 0px 3px 6px #00000029
+        @media(max-width: 1024px)
+            flex: 0 1 25% !important
+        @media(max-width: 425px)
+            flex: 0 1 30% !important
+        @media(max-width: 375px)
+            flex: 0 1 45% !important
+
+.product-not-add
+    display: flex
+    justify-content: flex-end
+    margin: 0 0 1rem 0
+    span
+        font: normal normal normal 1rem Rubik
+        color: red
+        @media(max-width: 425px)
+            font-size: 0.8rem
+        @media(max-width: 425px)
+            font-size: 0.6rem
+
+.basket-right-row
+    flex: 1 1 30%
+    display: block
+    
+.price-info-area
+    display: flex
+    flex-direction: column
+    padding: 2rem 2rem
+    background-color: $price-sum-bg
+    position: sticky
+    top: 150px
+
+.price-sum
+    display: flex
+    justify-content: flex-start
+    margin: 0 0 2rem 0
+    span
+        color: $text-colour
+        font: normal normal bold 1.7rem Rubik
+        @media(max-width: 1024px)
+            font: normal normal bold 1.4rem Rubik
+
+.price-info
+    display: flex
+    flex-direction: column
+
+.price-info-first-row
+    display: flex
+    justify-content: space-between
+    margin: 0 0 0.5rem 0
+    font: $font-normal
+    align-items: center
+    @media(max-width: 1024px)
+            font: normal normal normal 1rem Rubik
+    p
+        margin: 0
+
+.price-info-second-row
+    display: flex
+    justify-content: space-between
+    margin: 0 0 0.5rem 0
+    font: $font-bold
+    align-items: center
+    @media(max-width: 1024px)
+            font: normal normal bold 1rem Rubik
+    p
+        margin: 0
+        
+.price-info-third-row
+    display: flex
+    justify-content: space-between
+    margin: 0 0 0.5rem 0
+    font: $font-normal
+    align-items: center
+    @media(max-width: 1024px)
+            font: normal normal normal 1rem Rubik
+    p
+        margin: 0
+
+.price-info-fourth-row
+    display: flex
+    justify-content: space-between
+    margin: 0 0 0.5rem 0
+    font: $font-bold
+    align-items: center
+    @media(max-width: 1024px)
+            font: normal normal bold 1rem Rubik
+    p
+        margin: 0
+
+.price-info-fifth-row
+    display: flex
+    justify-content: space-between
+    margin: 1rem 0 0.5rem 0
+    font: normal normal bold 1.3rem Rubik
+    align-items: center
+    color: $lcw-price
+    @media(max-width: 1024px)
+            font: normal normal bold 1.1rem Rubik
+            margin: 0.5rem 0
+    p
+        margin: 0
+
+.basket-dialog-title
+    display: flex !important
+    justify-content: flex-end !important
+
+.basket-dialog-img
+    margin: 1rem 0 0 0
+
+.basket-dialog-img:hover
+    cursor: pointer
+
+.basket-dialog-text
+    font: normal normal bold 1rem Rubik !important
+    color: $text-colour !important
+    margin: 1rem 0 !important
+    text-align: center
+    @media(max-width: 425px)
+        font: normal normal bold 1rem Rubik !important
+    @media(max-width: 375px)
+        font: normal normal bold 0.85rem Rubik !important
+
+.basket-dialog-actions
+    display: flex !important
+    justify-content: space-between !important
+    padding: 1.5rem !important
+    button:first-child
+        font: normal normal normal 1rem Rubik !important
+        background-color: #FFFFFF !important
+        color: #0047BA !important
+        flex: 0 1 20% !important
+    button:last-child
+        font: normal normal normal 1rem Rubik !important
+        background-color: $lcw-price !important
+        color: white !important
+        flex: 0 1 80% !important
+    @media(max-width: 425px)
+        button:first-child
+            font: normal normal normal 0.9rem Rubik !important
+        button:last-child
+            font: normal normal normal 0.9rem Rubik !important
+    @media(max-width: 375px)
+        button:first-child
+            font: normal normal normal 0.8rem Rubik !important
+        button:last-child
+            font: normal normal normal 0.8rem Rubik !important
+        
+
+
+.basket-row-empty
+    display: flex
+    justify-content: center
+    padding: 5rem 0 0 0
+
+.empty-basket-content
+    display: flex
+    flex-direction: column
+    padding: 3rem 0 0 0
+    align-items: center
+    p
+        margin: 1rem 1rem 1rem 1rem
+        color: $lcw-price
+        font: normal normal bold 1.5rem Rubik
+        @media(max-width: 425px)
+            font: normal normal bold 1.2rem Rubik
+        @media(max-width: 375px)
+            font: normal normal bold 1rem Rubik
+    span
+        margin: 0 0 1rem 0
+        color: $text-colour
+        font: normal normal normal 1.1rem Rubik
+        @media(max-width: 425px)
+            font: normal normal normal 0.9rem Rubik
+        @media(max-width: 375px)
+            font: normal normal normal 0.7rem Rubik
+    a
+        margin: 2rem
+        background-color: $lcw-price
+        padding: 1rem
+        border-radius: 2ch
+        color: white
+        font: normal normal normal 1.2rem Rubik
+        text-decoration: none
+        @media(max-width: 425px)
+            font: normal normal normal 1rem Rubik
+            margin: 1rem
+        @media(max-width: 375px)
+            font: normal normal bold 0.7rem Rubik
+            margin: 0.5rem
+    a:hover
+        background-color: $lcw-price + 30
+
+
+.basket-dialog-warning-title
+    display: flex
+    justify-content: flex-end
+
+.basket-dialog-warning-text
+    display: flex !important
+    color: $text-colour !important
+    font: normal normal normal 1.3rem Rubik !important
+    margin: 2rem !important
+    @media(max-width: 425px)
+        margin: 1rem !important
+        font: normal normal normal 1rem Rubik !important
+
+.basket-dialog-warning-actions
+    display: flex !important
+    justify-content: space-between !important
+    padding: 1.5rem !important
+    button
+        font: normal normal normal 1rem Rubik !important
+        background-color: $lcw-price !important
+        color: white !important
+        width: 100%
+    @media(max-width: 425px)
+        button:last-child
+            font: normal normal normal 0.9rem Rubik !important
+    @media(max-width: 375px)
+        button:last-child
+            font: normal normal normal 0.8rem Rubik !important
+        
+
+    
+
+    
+

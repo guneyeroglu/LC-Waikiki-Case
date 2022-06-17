@@ -1,0 +1,115 @@
+.fav-product-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #BEC2C6;
+  padding: 0 0 1rem 0;
+  margin: 1rem;
+}
+@media (max-width: 600px) {
+  .fav-product-item {
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+.fav-left-row {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 75%;
+}
+
+.fav-product-img {
+  display: flex;
+  align-items: stretch;
+  padding: 0 1rem 0 0;
+}
+.fav-product-img img {
+  width: 100px;
+  height: 140px;
+}
+
+.fav-product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.fav-product-top {
+  font: normal normal normal 1rem Rubik;
+  color: #61666A;
+}
+@media (max-width: 600px) {
+  .fav-product-top {
+    font-size: 0.8rem;
+  }
+}
+
+.fav-product-bottom {
+  margin: 1rem 0 0 0;
+}
+.fav-product-bottom p {
+  margin: 0;
+  font: normal normal normal 0.95rem Rubik;
+  color: #61666A;
+}
+@media (max-width: 600px) {
+  .fav-product-bottom p {
+    font-size: 0.8rem;
+  }
+}
+.fav-product-bottom p span {
+  font: normal normal bold 0.95rem Rubik;
+}
+@media (max-width: 600px) {
+  .fav-product-bottom p span {
+    font-size: 0.8rem;
+  }
+}
+.fav-product-bottom p:first-child {
+  margin: 0 0 0.5rem 0;
+}
+
+.fav-right-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 25%;
+  text-align: end;
+}
+
+.fav-right-price {
+  display: flex;
+  flex-direction: column;
+}
+.fav-right-price span:first-child {
+  color: #61666A;
+  font: normal normal normal 0.95rem Rubik;
+  text-decoration: line-through;
+}
+@media (max-width: 600px) {
+  .fav-right-price span:first-child {
+    font-size: 0.8rem;
+  }
+}
+.fav-right-price span:last-child {
+  color: #0047BA;
+  font: normal normal bold 1.2rem Rubik;
+}
+@media (max-width: 600px) {
+  .fav-right-price span:last-child {
+    font-size: 1rem;
+  }
+}
+
+.fav-right-like img {
+  width: 32px;
+  height: 32px;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.fav-right-like img:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+$text-colour: #61666A
+$lcw-price: #0047BA
+
+.fav-product-item
+    display: flex
+    flex-direction: row
+    border-bottom: 1px solid #BEC2C6
+    padding: 0 0 1rem 0 
+    margin: 1rem
+    @media(max-width: 600px)
+        margin: 1rem 0 1rem 0
+
+.fav-left-row
+    display: flex
+    justify-content: space-between
+    flex: 0 1 75%
+
+.fav-product-img
+    display: flex
+    align-items: stretch
+    padding: 0 1rem 0 0
+    img
+        width: 100px
+        height: 140px
+
+.fav-product-info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: start
+
+.fav-product-top
+    span
+    font: normal normal normal 1rem Rubik
+    color: $text-colour
+    @media(max-width: 600px)
+        font-size: 0.8rem
+
+.fav-product-bottom
+    margin: 1rem 0 0 0
+    p
+        margin: 0
+        font: normal normal normal 0.95rem Rubik
+        color: $text-colour
+        @media(max-width: 600px)
+            font-size: 0.8rem
+        span
+            font: normal normal bold 0.95rem Rubik
+            @media(max-width: 600px)
+                font-size: 0.8rem
+    p:first-child
+        margin: 0 0 0.5rem 0
+
+.fav-right-row
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    flex: 0 1 25%
+    text-align: end
+
+.fav-right-price
+    display: flex
+    flex-direction: column
+    span:first-child
+        color: $text-colour
+        font: normal normal normal 0.95rem Rubik
+        text-decoration: line-through
+        @media(max-width: 600px)
+            font-size: 0.8rem
+    span:last-child
+        color: $lcw-price
+        font: normal normal bold 1.2rem Rubik
+        @media(max-width: 600px)
+            font-size: 1rem
+
+.fav-right-like
+    img
+        width: 32px
+        height: 32px
+        margin: 0.5rem
+        padding: 0.25rem
+        background-color: white
+        border-radius: 8px
+        box-shadow: 0px 3px 6px #00000029
+    img:hover
+        cursor: pointer
+        
+
+
+
+
+
+                

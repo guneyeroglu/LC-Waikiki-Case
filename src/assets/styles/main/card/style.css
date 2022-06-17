@@ -1,0 +1,196 @@
+.product-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+  padding: 0 2.75rem;
+}
+
+.card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  border: none;
+  padding: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.card-body {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-body-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0.5rem 0;
+  height: 100px;
+}
+
+.card-body-text p {
+  color: #61666A;
+  font: normal normal normal 1rem Rubik;
+}
+
+.card-body-text h5 {
+  color: #0047BA;
+  font: normal normal bold 1.3rem Rubik;
+}
+
+@media (max-width: 1024px) {
+  .card-body-text {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-body-text {
+    height: 125px;
+  }
+}
+
+.card-body-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 0 0 0;
+  height: 50px;
+}
+
+.circle-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-circle {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #DFC073;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 0.8rem;
+}
+
+.second-circle {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #28A9FF;
+  border-radius: 50%;
+}
+
+.circle-text {
+  margin: 0 2rem;
+  font: normal normal normal 1rem Rubik;
+  letter-spacing: 0.003rem;
+  color: #61666A;
+}
+
+.button-content {
+  display: none;
+  width: 100%;
+}
+
+.btn-add {
+  display: none;
+  background-color: #0047BA;
+  padding: 0.4rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 0.65rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-add:hover {
+  background-color: #145bce;
+}
+
+.like-indicator {
+  position: absolute;
+  right: 0;
+  margin: 0.75rem 1rem;
+  padding: 0.25rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+}
+
+.like-indicator:hover {
+  cursor: pointer;
+}
+
+.card:hover .circle-content {
+  display: none;
+}
+
+.card:hover .btn-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.card:hover .button-content {
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

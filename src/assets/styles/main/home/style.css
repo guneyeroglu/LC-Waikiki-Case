@@ -1,0 +1,87 @@
+.lcw-breadcrumb {
+  display: flex;
+  padding: 0 3rem;
+  margin: 1rem 0 0 0;
+}
+.lcw-breadcrumb ol {
+  margin-bottom: 0;
+}
+.lcw-breadcrumb ol li a {
+  color: #61666A;
+  font: normal normal normal 1rem/1rem Rubik;
+  text-decoration: none;
+}
+.lcw-breadcrumb ol li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.product-list-heading {
+  padding: 0 3rem;
+  margin: 1rem 0;
+}
+
+.pl-first-row {
+  display: block;
+  padding: 0 0 0.5rem 0;
+}
+.pl-first-row h3 {
+  color: #61666A;
+  font: normal normal normal 1.2rem/1rem Rubik;
+}
+
+.pl-second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 0.5rem 0;
+}
+.pl-second-row p {
+  color: #61666A;
+  font: normal normal bold 1.2rem/1rem Rubik;
+  margin: 0;
+  align-self: center;
+}
+
+.filter-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-row button img {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.8rem 0 0;
+}
+.filter-row button span {
+  color: #61666A;
+  font: normal normal normal 1.2rem/1rem Rubik;
+}
+.filter-row button:hover span {
+  color: black;
+}
+
+.btn-sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white !important;
+  border: none;
+  box-shadow: 0 0 0 0;
+}
+
+.sort-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.1607843137);
+  background-color: white;
+  width: 210px;
+  height: auto;
+  z-index: 99;
+  right: 3rem;
+  color: #61666A;
+  font: normal normal normal 1.1rem Rubik;
+  padding: 1rem;
+}/*# sourceMappingURL=style.css.map */
